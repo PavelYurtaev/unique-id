@@ -20,7 +20,7 @@ public class UniqueIdController {
 
     @GetMapping("/id")
     public ResponseEntity<UniqueIdDto> getRandomInt() {
-        final UniqueId response = uniqueIdService.getUniqueId();
+        final UniqueId response = uniqueIdService.getUniqueIdFromSequence();
         return ResponseEntity.ok(UniqueIdDto.mapFromModel(response));
     }
 }

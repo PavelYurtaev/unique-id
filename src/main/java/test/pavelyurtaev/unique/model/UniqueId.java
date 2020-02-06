@@ -8,7 +8,7 @@ public class UniqueId {
         this.id = id;
     }
 
-    public static UniqueId createFromRandomLong(final Long number) {
+    public static UniqueId createFromLong(final Long number) {
         return new UniqueId(number);
     }
 

@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/unique
+    username: postgres
+    password: root
+
+sequence-table: unique_id_sequence
